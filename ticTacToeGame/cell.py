@@ -2,6 +2,9 @@ import pygame
 
 
 class Cell:
+    '''
+    Одна ячейка поля, обработка логики работы
+    '''
     def __init__(self, x, y, state, index):
         self.zero = pygame.image.load('static/zero.png')
         self.cross = pygame.image.load('static/cross.png')

@@ -3,6 +3,9 @@ from constants import width, height
 
 
 class Button:
+    '''
+    Кнопки
+    '''
     def __init__(self, picture_1, picture_2):
         self.picture_1 = picture_1
         self.picture_2 = picture_2

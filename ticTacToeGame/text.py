@@ -24,14 +24,9 @@ class Text:
         self.text_win_surface = self.font_object.render(self.text_win, True, self.color)
         self.text_lose_surface = self.font_object.render(self.text_lose, True, self.color)
         self.speed = [randint(0, 1) * 2 - 1, randint(0, 1) * 2 - 1]
-        self.state = state
+        self.state = state  # Необходимость отображения текста
 
     def draw(self, screen):
-        """
-        Отрисовка
-        :param screen:
-        :return:
-        """
         if self.state:
             screen.blit(self.text_win_surface, (int(self.x), int(self.y)))
             screen.blit(self.text_lose_surface, (int(self.x), int(self.y) + self.size))

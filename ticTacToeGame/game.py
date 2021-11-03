@@ -6,6 +6,9 @@ from grid import Grid
 
 
 class Game:
+    '''
+    Основной класс игры
+    '''
     def __init__(self):
         self.screen = pygame.display.set_mode(size)  # Установка размеров окна
         self.gameover = False
@@ -37,7 +40,6 @@ class Game:
                                self.bestDecMode.check_click(mouse_x, mouse_y, self.screen) or \
                                self.chanceMode.check_click(mouse_x, mouse_y, self.screen) or \
                                self.grid.check_click(mouse_x, mouse_y)
-
 
     def process_logic(self):
         pass

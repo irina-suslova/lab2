@@ -5,6 +5,9 @@ from declaration import Declaration
 
 
 class Grid:
+    '''
+    Сетка игры
+    '''
     def __init__(self):
         self.coords_x = [173, 294, 415]
         self.coords_y = [202, 330, 458]
@@ -16,10 +19,11 @@ class Grid:
 
     def checker(self):
         """
-        0 - game continious
-        1 - win
-        2 - lose
+        Проверка окончания игры
         :return:
+        0 - игра продолжается
+        1 - победа
+        2 - поражение
         """
         for i in range(3):
             if self.cells[0 + i * 3].state == self.cells[1 + i * 3].state and self.cells[1 + i * 3].state == \

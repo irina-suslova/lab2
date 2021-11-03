@@ -2,6 +2,9 @@ import pygame
 
 
 class Background:
+    '''
+    Задний фон, рисунок поля
+    '''
     def __init__(self):
         self.picture = 'static/field.png'
         self.image = pygame.image.load(self.picture)

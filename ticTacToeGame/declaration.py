@@ -15,5 +15,4 @@ class Declaration:
         if self.state == 1:
             screen.blit(self.win, self.rect)
         elif self.state == 2:
-            pygame.time.wait(500)
             screen.blit(self.lose, self.rect)

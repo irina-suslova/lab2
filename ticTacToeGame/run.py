@@ -4,7 +4,7 @@ from game import Game
 
 
 def main():
-    pygame.init()  # Инициализация библиотеки
+    pygame.init()
     game = Game()
     game.main_loop()
     sys.exit()
